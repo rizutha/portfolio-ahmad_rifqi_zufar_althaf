@@ -62,7 +62,7 @@ html * {
     font-weight: 700;
 }
 
-.icon-btn {
+.icon-btn-a {
     background-color: var(--primary);
     color: var(--light);
     display: flex;
@@ -71,4 +71,46 @@ html * {
     border-radius: 100%;
     height: 40px;
     width: 40px;
+}
+
+.icon-area-a {
+    width: 136px; 
+    border: solid 1px; 
+    border-color: var(--primary); 
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.icon-btn-b {
+    background-color: var(--light);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.icon-area-b {
+    width: 132px; 
+    border: solid 1px; 
+    border-color: var(--light); 
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.card-box {
+    border: solid 0.5px;
+    border-color: var(--light);
+    width: 424px; 
+    border-radius: 15px;
+}
+
+.card-port {
+    background-color: var(--primary);
+    width: 650px; 
+    border-radius: 15px;
 }
