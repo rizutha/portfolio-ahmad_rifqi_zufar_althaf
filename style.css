@@ -28,7 +28,27 @@ html * {
 
 .accent-bg {
     background-color: var(--accent);
-    color: var(--dark);
+}
+
+/* color */
+
+.primary-color {
+    color: var(--primary); 
+}
+.accent-color {
+    color: var(--accent); 
+}
+.dark-color {
+    color: var(--dark); 
+}
+.light-color {
+    color: var(--light); 
+}
+.text-color {
+    color: var(--text); 
+}
+.grey-color {
+    color: var(--grey); 
 }
 
 /* font-color */
@@ -63,6 +83,8 @@ html * {
     font-weight: 700;
 }
 
+/* icon */
+
 .icon-btn-a {
     background-color: var(--primary);
     color: var(--light);
@@ -83,9 +105,39 @@ html * {
     color: var(--primary);
 }
 
+.icon-stock {
+    border: solid 1px; 
+    border-color: var(--primary); 
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
 .icon-btn-b {
     background-color: var(--light);
     color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.icon-btn-c {
+    background-color: var(--accent);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.icon-btn-d {
+    border: solid 1px var(--accent);
+    color: var(--accent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +155,8 @@ html * {
     color: var(--light);
 }
 
+/* cards */
+
 .card-box {
     border: solid 0.5px;
     border-color: var(--light);
@@ -112,11 +166,114 @@ html * {
 
 .card-port {
     background-color: var(--primary);
-    width: 650px; 
+    width: 640px; 
     border-radius: 15px;
 }
+
+/* others */
 
 .cform {
     border: none;
     border-bottom: 1px solid var(--accent);
+}
+
+.ccontainer {
+    width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body h4 {
+    color: var(--grey);
+    width: 326px;
+}
+
+body h3 {
+    color: var(--grey);
+}
+
+h1 {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1::before,
+  h1::after {
+    background-color: var(--light);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  h1::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  h1::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .hero-text {
+    font-size: 8vw;
+    color: var(--light);
+  }
+
+  .yellow-span {
+    color: var(--accent);
+  }
+
+.field-group{
+    position: relative;
+    padding-top: 15px;
+}
+
+.input-field {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid var(--accent);
+    padding: 10px 0;
+    background-color: #4E5461;
+    padding-left: 15px;
+    font-size: 2em;
+    color: var(--light);
+    transition: 0,3s ease;
+  }
+
+.input-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+    color: var(--text);
+    transition: 0.3s ease;
+    padding-left: 15px;
+    top: -15px;
+  }
+
+.input-field::placehorder {
+    color: transparent;
+}
+
+input:placeholder-shown ~ .input-label {
+    font-size: 2em;
+    top: 25px;
+}
+
+.input-field:focus{
+    border-image: linear-gradient(to right, var(--accent));
+    border-image-slice: 1;
+}
+
+.input-field:focus ~ .input-label {
+    display: block;
+    position: absolute;
+    top: -20px;
+    font-size: 1.25em;
+    color: var(--accent);
 }
