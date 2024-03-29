@@ -281,6 +281,7 @@ input:placeholder-shown ~ .input-label {
 ul {
     list-style-type: none;
     background-color: var(--light);
+    width: 260px;
 }
 
 .link-nav {
