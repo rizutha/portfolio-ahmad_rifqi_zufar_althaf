@@ -277,3 +277,13 @@ input:placeholder-shown ~ .input-label {
     font-size: 1.25em;
     color: var(--accent);
 }
+
+ul {
+    list-style-type: none;
+    background-color: var(--light);
+}
+
+.link-nav {
+    text-decoration: none;
+    color: var(--primary);
+}
