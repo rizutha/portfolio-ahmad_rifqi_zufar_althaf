@@ -159,8 +159,7 @@ html * {
 
 .card-box {
     border: solid 0.5px;
-    border-color: var(--light);
-    width: 424px; 
+    border-color: var(--light); 
     border-radius: 15px;
 }
 
@@ -287,4 +286,15 @@ ul {
 .link-nav {
     text-decoration: none;
     color: var(--primary);
+}
+
+.sticky-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 0px 35px 79px 2px rgba(0,0,0,0.75);
 }
