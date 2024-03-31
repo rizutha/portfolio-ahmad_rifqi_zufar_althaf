@@ -4,7 +4,34 @@ html * {
     font-family: "Plus Jakarta Sans", sans-serif;   
 }
 
-/* color */
+/* Navbar */
+ul {
+    list-style-type: none;
+    background-color: var(--light);
+    width: 260px;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.sticky-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    right: 50%;
+    left: 50%;
+}
+
+/* Navbar-Shadow */
+.shadow {
+    box-shadow: 0px 35px 79px 2px rgba(0,0,0,0.75);
+}
+
+/* Color Variables */
 
 :root {
     --primary: #2E323B;
@@ -15,7 +42,7 @@ html * {
     --grey : #BBBBBB;
   }
 
-/* background-color */
+/* Background-Color */
 
 .dark-bg {
     background-color: var(--dark);
@@ -30,7 +57,7 @@ html * {
     background-color: var(--accent);
 }
 
-/* color */
+/* Color */
 
 .primary-color {
     color: var(--primary); 
@@ -51,7 +78,7 @@ html * {
     color: var(--grey); 
 }
 
-/* font-color */
+/* Font-Color */
 
 .h-color {
     color: var(--light);
@@ -61,7 +88,7 @@ html * {
     color: var(--text);
 }
 
-/* font-weight */
+/* Font-Weight */
 
 .fw-sm {
     font-weight: 200;
@@ -83,7 +110,7 @@ html * {
     font-weight: 700;
 }
 
-/* icon */
+/* Button & Icon */
 
 .icon-btn-a {
     background-color: var(--primary);
@@ -114,14 +141,14 @@ html * {
 }
 
 .icon-btn-b {
-    background-color: var(--light);
+    background-color: var(--accent);
     color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-btn-c {
@@ -155,12 +182,10 @@ html * {
     color: var(--light);
 }
 
-/* cards */
-
+/* Cards */
 .card-box {
     border: solid 0.5px;
-    border-color: var(--light);
-    width: 424px; 
+    border-color: var(--light); 
     border-radius: 15px;
 }
 
@@ -170,19 +195,7 @@ html * {
     border-radius: 15px;
 }
 
-/* others */
-
-.cform {
-    border: none;
-    border-bottom: 1px solid var(--accent);
-}
-
-.ccontainer {
-    width: 1320px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
+/* Others */
 body h4 {
     color: var(--grey);
     width: 326px;
@@ -192,41 +205,18 @@ body h3 {
     color: var(--grey);
 }
 
-h1 {
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  h1::before,
-  h1::after {
-    background-color: var(--light);
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-  }
-  
-  h1::before {
-    right: 0.5em;
-    margin-left: -50%;
-  }
-  
-  h1::after {
-    left: 0.5em;
-    margin-right: -50%;
-  }
 
-  .hero-text {
+.hero-text {
     font-size: 8vw;
     color: var(--light);
-  }
+}
 
-  .yellow-span {
+.yellow-span {
     color: var(--accent);
   }
 
+
+/* Input-Form */  
 .field-group{
     position: relative;
     padding-top: 15px;

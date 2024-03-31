@@ -7,212 +7,310 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scroll-carousel@1.2.7/dist/scroll.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-dark">
 
-    <div class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-8">
-                <h2 class="hero-text fw-lg">Hi, Im <span class="yellow-span">Rifqi!</span></h2>
-                <h2 class="text-white">I craft value with empathy.</h2>
-            </div>
-            <div class="col-12 col-md-4 d-md-flex justify-content-end mt-5 mt-md-0">
-                <img src="assets/hero_figure.png" alt="">
+<body class="bg-dark"  id="home" name="home">
+
+    <!-- Navbar -->
+    <nav class="container d-flex justify-content-between mt-4">
+        <a class="button icon-btn-d animate__animated animate__fadeInLeft mt-2" href="https://www.instagram.com/arfaraltha/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256"
+                style="fill:#000000;">
+            <g fill="#ffce1a" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z"></path></g></g>
+            </svg>
+        </a>
+        <div class="sticky-nav animate__animated animate__fadeInDownBig">
+            <ul class="d-flex justify-content-center align-items-center py-3 px-5 rounded-5 shadow">
+                <li><a href="#portfolio" class="link-nav pt-1 px-3 fw-lg">Portfolio</a></li>
+                <li><a href="#home" class="link-nav px-1 py-1 fw-lg icon-btn-b"><span class="material-symbols-outlined">arrow_upward</span></a></li>
+                <li><a href="#workflow" class="link-nav pt-1 px-3 fw-lg">Workflow</a></li>
+            </ul>
+        </div>
+        <a class="button icon-btn-d animate__animated animate__fadeInRight mt-2" href="https://www.linkedin.com/in/rifqi-zufar/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256"
+            style="fill:#000000;">
+            <g fill="#ffce1a" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M19,3h-14c-1.105,0 -2,0.895 -2,2v14c0,1.105 0.895,2 2,2h14c1.105,0 2,-0.895 2,-2v-14c0,-1.105 -0.895,-2 -2,-2zM9,17h-2.523v-7h2.523zM7.694,8.717c-0.771,0 -1.286,-0.514 -1.286,-1.2c0,-0.686 0.514,-1.2 1.371,-1.2c0.771,0 1.286,0.514 1.286,1.2c0,0.686 -0.514,1.2 -1.371,1.2zM18,17h-2.442v-3.826c0,-1.058 -0.651,-1.302 -0.895,-1.302c-0.244,0 -1.058,0.163 -1.058,1.302c0,0.163 0,3.826 0,3.826h-2.523v-7h2.523v0.977c0.325,-0.57 0.976,-0.977 2.197,-0.977c1.221,0 2.198,0.977 2.198,3.174z"></path></g></g>
+            </svg>
+        </a>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <div class=" my-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="hero-text fw-lg animate__animated animate__fadeInLeft">Hi, Im <span class="yellow-span">Rifqi!</span></h2>
+                    <h2 class="text-white"><span class="typing"></span></h2>
+                </div>
+                <div class="col-12 col-md-4 d-md-flex justify-content-end mt-5 mt-md-0 animate__animated animate__slideInRight">
+                    <img src="assets/hero_figure.png" class="" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Hero Card -->
-    <div class="container my-5 rounded-4 overflow-hidden">
-        <div class="row">
-            <div class="col-12 col-md-5 primary-bg p-5">
-                <div class="">
-                    <h3 class="text-white mb-3">About</h3>
-                    <h5 class="text-white">This is a placeholder of the card description to describe something you want to tell about.</h5>
-                </div>
-            </div> 
-            <div class="col-12 col-md-4  primary-bg p-5">
-                <div><h3 class="text-white mb-3">Skillset</h3></div>
-                <div class="border-bottom mb-3"><h4>UI/UX Design</h4></div>
-                <div class="border-bottom mb-3"><h4>Visual Branding</h4></div>
-                <div class="border-bottom"><h4>Web Developer</h4></div>   
-            </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center accent-bg py-5 px-5">
-                <h3 class="dark-color">My Works</h3>
-                <a class="align-items-center ps-2 pe-1 py-1 icon" style="text-decoration: none;" href="www.google.com">
-                    <div class="button icon-btn-a" >
-                        <span class="material-symbols-outlined">arrow_downward</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>   
-
-    <div class="container mb-5 py-5">
-        <h1 class="text-white">Portfolio</h1>
-    </div>
-
-    <!-- Solid Card Group-->
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
-                    <img src="assets/design1.png" width="300px" height="181px" alt="">
-                    <div class="ms-0 mt-4 mt-md-0 ms-md-4">
-                        <h3 class="text-white">Gadgety</h3>
-                        <p class="text-white d-flex flex-wrap">This is a placeholder of the card description to describe something you want to tell about.</p>
-                        <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
-                            <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
-                            <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
-                    <img src="assets/design1.png" width="300px" height="181px" alt="">
-                    <div class="ms-0 mt-4 mt-md-0 ms-md-4">
-                        <h3 class="text-white">Gadgety</h3>
-                        <p class="text-white d-flex flex-wrap">This is a placeholder of the card description to describe something you want to tell about.</p>
-                        <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
-                            <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
-                            <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
-                    <img src="assets/design1.png" width="300px" height="181px" alt="">
-                    <div class="ms-0 mt-4 mt-md-0 ms-md-4">
-                        <h3 class="text-white">Gadgety</h3>
-                        <p class="text-white d-flex flex-wrap">This is a placeholder of the card description to describe something you want to tell about.</p>
-                        <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
-                            <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
-                            <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
-                    <img src="assets/design1.png" width="300px" height="181px" alt="">
-                    <div class="ms-0 mt-4 mt-md-0 ms-md-4">
-                        <h3 class="text-white">Gadgety</h3>
-                        <p class="text-white d-flex flex-wrap">This is a placeholder of the card description to describe something you want to tell about.</p>
-                        <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
-                            <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
-                            <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container my-5 py-5">
-        <h1 class="text-white">Workflow</h1>
-    </div>
-
-    <!-- Workflow -->
-
-    <div class="container my-5 pb-5">
+        <!-- Hero Card -->
+        <div class=" mt-5 rounded-4 overflow-hidden animate__animated animate__fadeInUp">
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">deployed_code</span></div>
-                        <h3 class="text-white pt-3">1. Product Briefing</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
-                    </div>  
-                </div>
-                <div class="col-12 col-lg-4 mt-4 mt-md-0">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">search</span></div>
-                        <h3 class="text-white pt-3">2. Discover Problem</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
+                <div class="col-12 col-md-5 primary-bg p-5">
+                    <div class="">
+                        <h3 class="text-white mb-3"><span class="yellow-span">About</span></h3>
+                        <h5 class="t-color">I'm a problem solver who emphasises empathy in finding solutions. I crafted design with a deep understanding of the audience, creativity, and dedication to produce relevant solutions.</h5>
                     </div>
+                </div> 
+                <div class="col-12 col-md-4  primary-bg p-5">
+                    <div><h3 class="text-white mb-3"><span class="yellow-span">Skillset</span></h3></div>
+                    <div class="border-bottom mb-3"><h4>UI/UX Design</h4></div>
+                    <div class="border-bottom mb-3"><h4>Product Management</h4></div>
+                    <div class="border-bottom"><h4>Front End Developer</h4></div>   
                 </div>
-                <div class="col-12 col-lg-4 mt-4 mt-md-0">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">
-                            <span class="material-symbols-outlined">
-                            emoji_objects
-                            </span></span></div>
-                        <h3 class="text-white pt-3">3. Ideating the Solution</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12 col-lg-4">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">view_quilt</span></div>
-                        <h3 class="text-white pt-3">4. Visualize the Ideas</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
-                    </div>  
-                </div>
-                <div class="col-12 col-lg-4 mt-4 mt-md-0">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">note_alt</span></div>
-                        <h3 class="text-white pt-3">5. Validate the Result</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 mt-4 mt-md-0">
-                    <div class="px-3 py-3 card-box">
-                        <div class="button icon-btn-d"><span class="material-symbols-outlined">code</span></div>
-                        <h3 class="text-white pt-3">6. Product Developing</h3>
-                        <p class="text-white">This is a placeholder of the card description to describe something you want to tell about the problem you can solve</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="pb-3">
-        <div class="container my-5 primary-bg py-5 px-5 rounded-4">
-            <div class="row py-5">
-                <div class="col-12 col-md-6 container-sm pe-5">
-                    <h2 class="text-white" style="font-size: 72px;">
-                        Let's ceate <span class="yellow-span">Value</span> with me
-                    </h2>
-                </div>
-                <div class="col-12 col-md-6 container-lg d-flex align-items-center">
-                    <div class="container field-group">
-                        <input type="text" name="name" id="name" class="input-field" placeholder="" autocomplete="off">
-                        <label for="name" class="input-label">Enter Your Email</label>
-                    </div>
-                    <a class="align-items-center ps-2 pe-1 py-1 pt-3" style="text-decoration: none;" href="www.google.com">
-                        <div class="button icon-btn-b" >
-                            <span class="material-symbols-outlined">arrow_right_alt</span>
+                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center accent-bg py-5 px-5">
+                    <h3 class="dark-color">My Works</h3>
+                    <a class="align-items-center ps-2 pe-1 py-1 icon" style="text-decoration: none;" href="#portfolio">
+                        <div class="button icon-btn-a" >
+                            <span class="material-symbols-outlined">arrow_downward</span>
                         </div>
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
+        </div>   
 
-    <footer class="dark-bg mt-5">
+        <!-- Portfolio-->
+        <div class="my-5 py-5" id="portfolio" name="portfolio">
+            <div class="my-5 pt-5" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-white mb-5">
+                    Selected Works
+                </h1>
+                <div class="slider carouesl">
+                    <div class="my-carousel data-carousel">
+                    
+                        <!-- Img Code -->
+                        <div class="my-slide">
+                            <img src="assets/Breathify.png" class="rounded-4">
+                        </div>
+                        <div class="my-slide">
+                            <img src="assets/Finelify.png" class="rounded-4">
+                        </div>
+                        <div class="my-slide">
+                            <img src="assets/Lokalezat.png" class="rounded-4" width="375px" height="272px">
+                        </div>
+                        <div class="my-slide">
+                            <img src="assets/Gadgety.png" class="rounded-4" width="375px" height="272px">
+                        </div>
+                        
+        
+                        <!-- Img Code End -->
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
+                            <img src="assets/Finelify.png" class="rounded-3" width="300" height="218" alt="">
+                            <div class="ms-0 mt-4 mt-md-0 ms-md-4">
+                                <h3 class="text-white">Finelify</h3>
+                                <p class="text-white d-flex flex-wrap">Mental health platform powered with Peduli AI to give user suggestion when facing mental issue</p>
+                                <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
+                                    <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
+                                    <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
+                            <img src="assets/Lokalezat.png" width="300" height="218" alt="">
+                            <div class="ms-0 mt-4 mt-md-0 ms-md-4">
+                                <h3 class="text-white">Lokalezat</h3>
+                                <p class="text-white d-flex flex-wrap">Lokalezat is a platform that allow you to acquire detailed information about local cullinary near user.</p>
+                                <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
+                                    <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
+                                    <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
+                            <img src="assets/Breathify.png" width="300" height="218" alt="">
+                            <div class="ms-0 mt-4 mt-md-0 ms-md-4">
+                                <h3 class="text-white">Breathify</h3>
+                                <p class="text-white d-flex flex-wrap">Breathify is an App to monitor and educate user about air quality to achieve healthier life.</p>
+                                <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
+                                    <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
+                                    <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="d-md-flex align-items-center flex-md-row flex-column py-5 px-5 mb-3 primary-bg rounded-4">
+                            <img src="assets/Gadgety.png" class="rounded-3" width="300" height="218" alt="">
+                            <div class="ms-0 mt-4 mt-md-0 ms-md-4">
+                                <h3 class="text-white">Gadgety</h3>
+                                <p class="text-white d-flex flex-wrap">A self initiated E-commerce App design project to explore more about UI design.</p>
+                                <a class="d-flex align-items-center ps-2 pe-1 py-1 icon-area-b" href="www.google.com">
+                                    <div class="fw-md pe-2 ps-1 pt-2" ><h5>Button</5></div>
+                                    <div class="button icon-btn-c" ><span class="material-symbols-outlined">arrow_outward</span></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workflow -->
+        <div id="workflow" name="workflow">
+            <div class="mt-5 pt-5" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-white">Workflow</h1>
+            </div>
+            <div class="my-5 pb-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">deployed_code</span></div>
+                                <h3 class="text-white pt-3">1. Product Briefing</h3>
+                                <p class="text-white">Gather and understanding all of the available informations about your brand and product.</p>
+                            </div>  
+                        </div>
+                        <div class="col-12 col-lg-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">search</span></div>
+                                <h3 class="text-white pt-3">2. Discover Problem</h3>
+                                <p class="text-white">Breakdown every elements of your product and empathize with the brand audience.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined">
+                                    emoji_objects
+                                    </span></span></div>
+                                <h3 class="text-white pt-3">3. Ideating the Solution</h3>
+                                <p class="text-white">Discovering every possible solution that relevant with existed problem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">view_quilt</span></div>
+                                <h3 class="text-white pt-3">4. Visualize the Ideas</h3>
+                                <p class="text-white">Transform the ideas into attractive visuals which tell clarity of the solution.</p>
+                            </div>  
+                        </div>
+                        <div class="col-12 col-lg-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">note_alt</span></div>
+                                <h3 class="text-white pt-3">5. Validate the Result</h3>
+                                <p class="text-white">Validating the solution with a prototype to simulate the final preview of your product.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="px-3 py-3 card-box">
+                                <div class="button icon-btn-d"><span class="material-symbols-outlined">code</span></div>
+                                <h3 class="text-white pt-3">6. Product Developing</h3>
+                                <p class="text-white">Develop final product after we got the relevant solutions that solve the product problem.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="pb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="my-5 primary-bg py-5 px-5 rounded-4">
+                <div class="row py-5">
+                    <div class="col-12 col-md-6 container-sm pe-5">
+                        <h2 class="text-white fw-xl ps-5" style="font-size: 72px;">
+                            Let's create <span class="yellow-span">Value</span> with me
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-6 container-lg d-flex align-items-center">
+                        <div class="container field-group ps-5">
+                            <input type="text" name="name" id="name" class="input-field" placeholder="" autocomplete="off">
+                            <label for="name" class="input-label">Enter Your Email</label>
+                        </div>
+                        <a class="align-items-center ps-2 pe-1 py-1 pt-3" style="text-decoration: none;" href="www.google.com">
+                            <div class="button icon-btn-b" >
+                                <span class="material-symbols-outlined py-3 px-3">arrow_right_alt</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dark-bg mt-5" id="footer" name="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 p-5">
+                <div class="col-12 col-md-7 p-5">
                     <div class="">
-                        <h2 class="text-white mb-3">arifqiza@gmail.com</h2>
+                        <h2 class="text-white mb-3">arifqiza<span class="yellow-span">@gmail.com</span></h2>
                     </div>
                 </div> 
-                <div class="col-12 col-md-4  p-5">
-                    <div><h3 class="text-white mb-3">Skillset</h3></div>
-                    <div class="border-bottom mb-3"><h4>UI/UX Design</h4></div>
-                    <div class="border-bottom mb-3"><h4>Visual Branding</h4></div>
-                    <div class="border-bottom"><h4>Web Developer</h4></div>   
+                <div class="col-12 col-md-5  p-5">
+                    <div><h3 class="text-white mb-3">More about me</h3></div>
+                    <div class="d-flex align-items-center">
+                        <div class="align-items-center me-3" style="text-decoration: none;">
+                            <div class="button icon-btn-b py-1 px-1" >
+                            <span class="material-symbols-outlined">call</span>
+                            </div>
+                        </div>
+                        <h5 class="pt-1 t-color">082314552812</h5>
+                    </div> 
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="align-items-center me-3" style="text-decoration: none;">
+                            <div class="button icon-btn-b py-1 px-1" >
+                            <span class="material-symbols-outlined">share_location</span>
+                            </div>
+                        </div>
+                        <h5 class="pt-1 t-color">Brebes, Central Java, Indonesia</h5>
+                    </div> 
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scroll-carousel@1.2.7/dist/scroll.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Typing-Animaton -->
+    <script>
+
+        var typing = new Typed (".typing", {
+            strings : ["I craft value with empathy" , "To provide you best solution"],
+            typeSpeed: 30,
+            backSpeed: 30,
+            loop:true
+        })
+    </script>
+
+    <!-- Carousel-JS -->
+    <script>
+        new ScrollCarousel(".my-carousel", {
+    speed: 10, 
+    smartSpeed: true, 
+    autoplay: true
+});
+    </script>
+    
+    <!-- Animate-On-Scroll -->
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
