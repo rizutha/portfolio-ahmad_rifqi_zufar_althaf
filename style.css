@@ -14,6 +14,23 @@ ul {
 .link-nav {
     text-decoration: none;
     color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.link-nav-text {
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.link-nav-text:hover {
+    color: #7a7a7a;
+    transition: 0.3s ease;
+}
+
+.link-nav-text:active {
+    color: var(--accent);
+    transition: 0.3s ease;
 }
 
 .sticky-nav {
@@ -111,6 +128,36 @@ ul {
 }
 
 /* Button & Icon */
+.icon-stock {
+    border: solid 1px; 
+    border-color: var(--primary); 
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.icon-btn-nav {
+    background-color: var(--accent);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.icon-btn-nav:hover {
+    background-color: #ffdb57;
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.icon-btn-nav:active {
+    transform: scale(0.7); 
+    transition: 0.3s ease;
+}
 
 .icon-btn-a {
     background-color: var(--primary);
@@ -121,18 +168,22 @@ ul {
     border-radius: 100%;
     height: 40px;
     width: 40px;
+    transition: 0.3s ease;
+}
+
+.icon-btn-a:hover {
+    transition: 0.3s ease;
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.icon-btn-a:active {
+    transition: 0.3s ease;
+    transform: scale(0.9);
 }
 
 .icon-area-a {
     width: 136px; 
-    border: solid 1px; 
-    border-color: var(--primary); 
-    border-radius: 50px;
-    text-decoration: none;
-    color: var(--primary);
-}
-
-.icon-stock {
     border: solid 1px; 
     border-color: var(--primary); 
     border-radius: 50px;
@@ -149,6 +200,18 @@ ul {
     border-radius: 100%;
     height: 100%;
     width: 100%;
+    transition: 0.3s ease;
+}
+
+.icon-btn-b:hover {
+    transition: 0.3s ease;
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.icon-btn-b:active {
+    transition: 0.3s ease;
+    transform: scale(0.9);
 }
 
 .icon-btn-c {
@@ -174,12 +237,26 @@ ul {
 }
 
 .icon-area-b {
-    width: 132px; 
+    width: 128px; 
     border: solid 1px; 
     border-color: var(--light); 
     border-radius: 50px;
     text-decoration: none;
     color: var(--light);
+    transition: 0.3s ease;
+}
+
+.icon-area-b:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transition: 0.3s ease;
+}
+
+.icon-area-b:active {
+    transform: scale(0.9);
+    color: #fdeaa4;
+    border-color: #fdeaa4;
+    transition: 0.3s ease;
 }
 
 /* Cards */
